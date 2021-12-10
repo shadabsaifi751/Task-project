@@ -1,0 +1,74 @@
+@import '_main';
+@import '_variable';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-1{
+    background-color: $section;
+    padding: 80px 0px 100px 0px;
+    @media (max-width:768px){
+        padding: 70px 0px 86px 0px;
+    }
+    h2{
+        color: $dark-light;
+        font-size: 37px;
+        @media (max-width:768px){
+            font-size: 26px;
+        }
+    }
+    h1{
+        color: $dark;
+        font-size: 37px;
+        font-weight: 600 !important;
+        @media (max-width:768px){
+            font-size: 26px;
+        }
+    }
+    p{
+        color: $gray;
+        @media (max-width:768px){
+            width: 100% !important;
+        }
+    }
+
+    .card{
+        height: 250px;
+        width: 350px;
+        border-top: 4px solid $success;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px 1px $shadow;
+        border-right: none !important;
+        border-left: none !important;
+        border-bottom: none !important;
+        @media (max-width:768px){
+            width: auto;
+        }
+        @media (max-width:1024px){
+            width: auto;
+        }
+        @media (max-width:1199px){
+            width: auto;
+        }
+        h5{
+            color: $black;
+            font-weight: 600;
+        }
+        p{
+            color: $gray;
+        }
+    }
+    .card:nth-child(2n){
+        border-top: 4px solid $warning;
+    }
+    .card-2{
+        border-color: $danger;
+    }
+    .card-4{
+        border-color: $info;
+    }
+}
